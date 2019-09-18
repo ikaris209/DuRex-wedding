@@ -191,7 +191,7 @@
 	var counter = function() {
 		$('.js-counter').countTo({
 			 formatter: function (value, options) {
-	      return value.toFixed(options.decimals);
+	      return String(value.toFixed(options.decimals)) + "+";
 	    },
 		});
 	};
